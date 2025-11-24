@@ -112,14 +112,12 @@ a {
 
 .capa-emo {
     
-    width: 150px; /* ajuste se quiser */
+    width: 150px;
     margin: 12px 25px 12px 0;
 
-    /* borda preta irregular e grossa */
     border: 6px solid #000;
     border-radius: 4px;
 
-    /* brilho emo neon roxo + vermelho */
     box-shadow:
         0 0 8px #ff0037,
         0 0 15px #630000,
@@ -127,9 +125,57 @@ a {
         inset 0 0 10px #ff0037,
         inset 0 0 15px #57000e;
 
-    /* efeito tortinho e dramático */
-    
-
-    /* textura emo suja */
+   
     filter: contrast(120%) grayscale(20%);
+}
+
+body{
+    
+    margin: 0;
+
+}
+
+.logo img {
+    width: 96px;
+    height: auto;
+}
+
+.site-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 32px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-shadow: 0 10px 24 px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+.informacoes .aluno{
+    font-size: 14px;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.informacoes .titulo-site{
+    font-size: 18px;
+    margin: 0;
+    color: black;
+
+}
+
+.site-nav a {
+    color: rgb(153, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.site-nav a:hover {
+    color: rgb(197, 0, 0);
+    text-decoration: underline;
+
 }

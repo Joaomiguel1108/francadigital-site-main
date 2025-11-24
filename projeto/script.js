@@ -14,8 +14,10 @@ const galeria = document.getElementById('galeria');
 const imagemInicial = chips[0].dataset.imagem;
 galeria.style.backgroundImage = `url(${imagemInicial})`;
 
-
-
-
-
+chips.forEach((chip)=>{
+    chip.addEventListener("click",(e)=>{
+        galeria.classList.add('Ativa');
+        galeria.style.backgroundImage = `url(${chip.dataset.image})`;
+    }   );
+});
 
